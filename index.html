@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Gestor de Productos</h1>
+</header>
+
+<main>
+
+    <!-- CREAR / ACTUALIZAR -->
+    <section class="form-section">
+        <h2>Agregar / Editar Producto</h2>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="number" id="precio" placeholder="Precio">
+        <button onclick="guardarProducto()">Guardar</button>
+    </section>
+
+    <!-- LISTA -->
+    <section class="lista-section">
+        <h2>Lista de Productos</h2>
+        <div id="lista"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>CRUD con LocalStorage - 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
