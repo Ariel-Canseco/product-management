@@ -70,6 +70,15 @@ button:hover {
     display: none;
 }
 
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark .item {
+    background: #1e1e1e;
+}
+
 /* FOOTER */
 footer {
     text-align: center;

@@ -113,4 +113,8 @@ class App {
     }
 }
 
+function toggleDark() {
+    document.body.classList.toggle("dark");
+}
+
 const app = new App();
