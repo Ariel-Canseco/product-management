@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD Productos</title>
+    <title>CRUD Productos Pro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Gestor de Productos</h1>
+    <h1>🛍️ Gestor de Productos</h1>
 </header>
 
 <main>
 
-    <!-- CREAR / ACTUALIZAR -->
+    <!-- FORMULARIO -->
     <section class="form-section">
         <h2>Agregar / Editar Producto</h2>
-        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="nombre" placeholder="Nombre del producto">
         <input type="number" id="precio" placeholder="Precio">
-        <button onclick="guardarProducto()">Guardar</button>
+        <button onclick="app.guardar()">Guardar</button>
+    </section>
+
+    <!-- FILTROS (NUEVO) -->
+    <section class="filtros">
+        <input type="text" id="buscar" placeholder="Buscar producto..." oninput="app.filtrar()">
+        <input type="number" id="min" placeholder="Precio mínimo" oninput="app.filtrar()">
+        <input type="number" id="max" placeholder="Precio máximo" oninput="app.filtrar()">
     </section>
 
     <!-- LISTA -->
@@ -30,8 +37,11 @@
 
 </main>
 
+<!-- NOTIFICACIONES (NUEVO) -->
+<div id="toast"></div>
+
 <footer>
-    <p>CRUD con LocalStorage - 2026</p>
+    <p>CRUD Pro con LocalStorage 🚀</p>
 </footer>
 
 <script src="script.js"></script>
