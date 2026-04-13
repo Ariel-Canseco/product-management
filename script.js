@@ -10,11 +10,21 @@ class App {
     }
 
     guardar() {
-        let nombre = document.getElementById("nombre").value;
-        let precio = document.getElementById("precio").value;
+        let nombre = document.getElementById("nombre").value.trim();
+        let precio = parseFloat(document.getElementById("precio").value);
 
-        if (!nombre || !precio) {
-            this.toast("Completa los campos");
+        if (!nombre || isNaN(precio)) {
+            this.toast("Completa correctamente los campos");
+            return;
+        }
+
+        if (nombre.length < 3) {
+            this.toast("El nombre debe tener al menos 3 caracteres");
+            return;
+        }
+
+        if (precio <= 0) {
+            this.toast("El precio debe ser mayor a 0");
             return;
         }
 
