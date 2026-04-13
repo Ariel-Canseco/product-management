@@ -63,6 +63,8 @@ class App {
                 </div>
             `;
         });
+        document.getElementById("contador").innerText =
+        "Total productos: " + lista.length;
     }
 
     editar(id) {

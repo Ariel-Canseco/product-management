@@ -12,6 +12,28 @@ header {
     padding: 20px;
 }
 
+.descripcion {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.dark .descripcion {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark .descripcion h2 {
+    color: #00c6ff;
+}
+
+.dark .descripcion p {
+    color: #ddd;
+}
+
 /* MAIN */
 main {
     max-width: 900px;

@@ -13,6 +13,26 @@
     <button onclick="toggleDark()">🌙</button>
 </header>
 
+<section class="descripcion">
+    <h2>Descripción del Proyecto</h2>
+    <p>
+        Esta aplicación es un sistema CRUD (Crear, Leer, Actualizar y Eliminar) 
+        desarrollado con HTML, CSS y JavaScript, cuyo propósito es gestionar 
+        un conjunto de productos de manera dinámica.
+    </p>
+    <p>
+        Permite a los usuarios agregar nuevos productos, visualizarlos en una lista, 
+        editarlos, eliminarlos, así como filtrarlos mediante un buscador y rangos de precio. 
+        Además, utiliza <strong>localStorage</strong> para almacenar la información de forma 
+        persistente en el navegador.
+    </p>
+    <p>
+        Este proyecto tiene como objetivo reforzar el uso del DOM, la manipulación de datos 
+        en el navegador y la aplicación del paradigma de Programación Orientada a Objetos (POO) 
+        en JavaScript.
+    </p>
+</section>
+
 <main>
 
     <!-- FORMULARIO -->
@@ -33,6 +53,7 @@
     <!-- LISTA -->
     <section class="lista-section">
         <h2>Lista de Productos</h2>
+        <p id="contador"></p>
         <div id="lista"></div>
     </section>
 
